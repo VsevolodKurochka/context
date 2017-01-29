@@ -87,6 +87,9 @@ End:  HIDDEN AND VISIBLE UTILITIES
       align-items: center;
     }
     &-just-cont{
+      &-between{
+        justify-content: space-between;
+      }
       &-end{
         justify-content: flex-end;
       }
@@ -100,6 +103,7 @@ End:  HIDDEN AND VISIBLE UTILITIES
     flex-shrink: 0;
     padding-left: getComp(gutter);
     padding-right: getComp(gutter);
+    position: relative;
   }
 }@else{
   .vrow{
@@ -133,8 +137,12 @@ End:  HIDDEN AND VISIBLE UTILITIES
   }
 }
 %padding-block{
-  padding-top: 50px;
-  padding-bottom: 50px; 
+  padding-top: 25px;
+  padding-bottom: 25px; 
+  @include resp-min(sm){
+    padding-top: 50px;
+    padding-bottom: 50px; 
+  }
 }
 .vsection{
   @extend %padding-block;

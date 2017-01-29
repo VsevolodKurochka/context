@@ -62,11 +62,12 @@ $colors: (
 /// @prop {Number} value - Значение размера шрифта
 $sizes: (
 	'vtitle-big': (
-		xs:   48px,
+		xs:   90px,
 		sm:   120px
 	),
 	'vtitle': (
-		md:   60px
+		sm:   35px,
+		md:   40px
 	),
 	'vtitle-small': (
 		sm:   30px

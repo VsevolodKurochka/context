@@ -30,3 +30,7 @@ a,button{
 strong,.strong,b,.b{
   @extend .blacks !optional;
 }
+iframe,object{
+  max-width: 100%;
+  height: auto;
+}
