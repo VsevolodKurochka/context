@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Main Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!--[if lte IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="vnav-wrap vnav-wrap-fixed">
+      <div class="vcontainer vnav-container">
+        <div class="vrow flex-v-center flex-just-cont-end">
+          <div class="vak-xs-8 vak-md-3">
+            <div class="vnav-logo">
+              <button class="vnav-btn" type="button" data-menu=".vnav-wrap-fixed .vnav"><span class="lines"><span></span><span></span><span></span></span><span class="text">Menu</span></button>
+            </div>
+          </div>
+          <nav class="vnav vak-xs-12 vak-md-6 min-md-right">
+            <ul>
+                      <li class="active"><a href="#sec1">Кто ведёт</a></li>
+                      <li><a href="#sec1">Ваш результат  </a></li>
+                      <li><a href="#sec1">Принять участие</a></li>
+            </ul>
+          </nav>
+          <div class="vak-xs-4 vak-md-3 vak-lg-2 min-md-right">
+            <div class="vnav-text-toggle text-right"><span></span><span></span><span></span></div>
+            <div class="vnav-text"><a class="vnav-text-inner">+38 (093) 537 30 95</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <section class="vsection greeting">
+        <div class="vcontainer">
+          <div class="vrow">
+            <div class="vak-xs-12 vak-md-6">
+              <p>Культовый тренинг по достижению сверхрезультатов <br class="vhidden-xs"> от самого популярного дуэта тренеров в СНГ*</p>
+              <h1 class="vtitle-big"><span class="color-main vtitle-clone-k">К</span>онтекст</h1>
+              <h2 class="vtitle-small">Программа по <span class="black">раскрытию потенциала</span> для достижения целей в личной жизни, карьере, деньгах и здоровье</h2>
+              <div class="italic greeting-names">
+                <p><span class="color-main">*</span> <span class="bold">Владимир Герасичев</span> - Эксперт в личной эффективности, лидерстве и командообразовании. Автор 2-х фильмов и книги-бестселлера</p>
+                <p><span class="color-main">*</span> <span class="bold">Арсен Рябуха</span> - Профессионал в области межличностных отношений и переговоров. Консультирует ТОП-менеджмент крупнейших брендов СНГ</p>
+              </div>
+              <p class="greeting-title-small">Даты проведения: <span class="black">28, 29, 20 апреля, Киев</span></p>
+                      <button class="vbtn vbtn-effect-shutter-vertical-out vbtn-main-second" data-func="vmodal" data-target="#modalform">Забронировать место на тренинг
+                      </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="vmodal" id="modalform">
+        <div class="vmodal-dialog vmodal-dialog-default vmodal-dialog-center">
+          <button class="vmodal-close" type="button" data-close="vmodal">&times;</button>
+          <div class="vmodal-box">
+            <p class="vmodal-title">Отправить заявку</p>
+            <div class="vmodal-body">
+              <form class="vmain-form" action="">
+                <div class="vmain-form-row vmain-form-input-wrap">
+                  <input type="text" placeholder="Имя"><span class="vmain-form-line"></span>
+                </div>
+                <div class="vmain-form-row vmain-form-input-wrap">
+                  <input type="email" placeholder="E-mail"><span class="vmain-form-line"></span>
+                </div>
+                <div class="vmain-form-row vmain-form-input-wrap">
+                  <input type="text" placeholder="Телефон"><span class="vmain-form-line"></span>
+                </div>
+                <div class="vmain-form-row vmain-form-btn-wrap">
+                  <button class="vbtn vbtn-effect-bounce-top" type="submit">Получить!</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vmodal vmodal-transparent" id="modalvideo">
+        <div class="vmodal-dialog big">
+          <button class="vmodal-close" type="button" data-close="vmodal">&times;</button>
+          <div class="vmodal-box">
+            <p class="vmodal-title"></p>
+            <div class="vmodal-body">
+              <div class="vmodal-video"></div>
+              <!-- +button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalform") Button_text_big1-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

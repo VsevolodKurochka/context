@@ -1,0 +1,7 @@
+@include connect-font(KievitProRegular,regular);
+// @include connect-font(KievitProItalic,italic);
+@include connect-font(KievitProBold,bold);
+@include connect-font(KievitProExtraBold,black);
+.italic{
+	font-style: italic;
+}

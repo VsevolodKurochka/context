@@ -1,0 +1,15 @@
+.greeting{
+	background-color: #efefef;
+	&-names,
+	&-title-small{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	@include resp-min(sm){
+		&-title-small{
+			font-size: 24px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+	}
+}

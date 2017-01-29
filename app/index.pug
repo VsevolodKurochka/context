@@ -1,0 +1,45 @@
+extends includes/layout
+block title
+	title Main Page
+block content
+	section.vsection.greeting
+		.vcontainer
+			.vrow
+				.vak-xs-12.vak-md-6
+					p Культовый тренинг по достижению сверхрезультатов <br class="vhidden-xs"> от самого популярного дуэта тренеров в СНГ*
+					h1.vtitle-big <span class="color-main vtitle-clone-k">К</span>онтекст
+					h2.vtitle-small Программа по <span class="black">раскрытию потенциала</span> для достижения целей в личной жизни, карьере, деньгах и здоровье
+					.italic.greeting-names
+						p <span class="color-main">*</span> <span class="bold">Владимир Герасичев</span> - Эксперт в личной эффективности, лидерстве и командообразовании. Автор 2-х фильмов и книги-бестселлера
+						p <span class="color-main">*</span> <span class="bold">Арсен Рябуха</span> - Профессионал в области межличностных отношений и переговоров. Консультирует ТОП-менеджмент крупнейших брендов СНГ
+					p.greeting-title-small Даты проведения: <span class="black">28, 29, 20 апреля, Киев</span>
+					+button("vbtn vbtn-effect-shutter-vertical-out vbtn-main-second", "#modalform") Забронировать место на тренинг
+block dev
+	//- 	+button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalform") Button_text_big1
+	//- +button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalvideo")(data-video="https://www.youtube.com/embed/Iutk7AboLZI" data-source="youtube" data-title="Уроки JavaScript Практика #3 Пишем свой CSS генератор") Button_text_big
+	.vmodal#modalform
+		.vmodal-dialog.vmodal-dialog-default.vmodal-dialog-center
+			button(type="button" class="vmodal-close" data-close="vmodal") &times;
+			.vmodal-box
+				p.vmodal-title Отправить заявку
+				.vmodal-body
+					form(action="" class="vmain-form")
+						.vmain-form-row.vmain-form-input-wrap
+							input(type="text" placeholder="Имя")
+							span.vmain-form-line
+						.vmain-form-row.vmain-form-input-wrap
+							input(type="email" placeholder="E-mail")
+							span.vmain-form-line
+						.vmain-form-row.vmain-form-input-wrap
+							input(type="text" placeholder="Телефон")
+							span.vmain-form-line
+						.vmain-form-row.vmain-form-btn-wrap
+							button.vbtn.vbtn-effect-bounce-top(type="submit") Получить!
+	.vmodal.vmodal-transparent#modalvideo
+		.vmodal-dialog.big
+			button(type="button" class="vmodal-close" data-close="vmodal") &times;
+			.vmodal-box
+				p.vmodal-title
+				.vmodal-body
+					.vmodal-video
+					// +button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalform") Button_text_big1

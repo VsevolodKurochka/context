@@ -1,0 +1,22 @@
+include ./mixins
+.vrow.flex-v-center.flex-just-cont-end
+	.vak-xs-8.vak-md-3
+		.vnav-logo
+			button(type="button" class="vnav-btn" data-menu=".vnav-wrap-fixed .vnav")
+				span.lines
+					span
+					span
+					span
+				span.text Menu
+	nav.vnav.vak-xs-12.vak-md-6.min-md-right
+		ul
+			+item("#sec1", "active") Кто ведёт
+			+item("#sec1") Ваш результат  
+			+item("#sec1") Принять участие
+	.vak-xs-4.vak-md-3.vak-lg-2.min-md-right
+		.vnav-text-toggle.text-right
+			span
+			span
+			span
+		.vnav-text
+			a.vnav-text-inner +38 (093) 537 30 95
