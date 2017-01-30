@@ -1828,10 +1828,7 @@ input:focus + .vmain-form-line {
     vertical-align: middle;
   }
   .review-type-video .review-inf {
-    margin-left: 15px;
-  }
-  .review-inf-pos {
-    width: 260px;
+    width: calc(100% - 140px);
   }
   .review-body {
     width: 75%;

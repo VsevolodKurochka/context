@@ -363,12 +363,15 @@
 			display: inline-block;
 			vertical-align: middle;
 		}
+		// &-type-video &-inf{
+		// 	margin-left: 15px;
+		// }
 		&-type-video &-inf{
-			margin-left: 15px;
+			width: calc(100% - 140px);
 		}
-		&-inf-pos{
-			width: 260px;
-		}
+		// &-type-video &-inf-pos{
+		// 	width: 260px;
+		// }
 		
 		&-body{
 			width: 75%;

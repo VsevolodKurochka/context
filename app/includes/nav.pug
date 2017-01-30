@@ -10,9 +10,10 @@ include ./mixins
 				span.text Menu
 	nav.vnav.vak-xs-12.vak-md-6.min-md-right
 		ul
-			+item("#sec1", "active") Кто ведёт
-			+item("#sec1") Ваш результат  
-			+item("#sec1") Принять участие
+			+item("#who-treners") Кто ведёт
+			+item("#trening") Ваш результат  
+			li
+				a(data-func="vmodal" data-target="#modalform") Принять участие
 	.vak-xs-4.vak-md-3.vak-lg-2.min-md-right
 		.vnav-text-toggle.text-right
 			span
