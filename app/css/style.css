@@ -109,7 +109,7 @@ iframe, object {
   src: local("KievitProBold"), url(../fonts/KievitProBold.otf);
 }
 
-.bold, .vnav-text, .vnav li a, .vbtn, .vtitle, .vtitle-big, .icon-text-title, .icon-only-title, .review-name, .review-title, .day-header-title, .day-title, .brilliant-block-title, .cause-number, .trener-name, .price-table-header, .vmodal-title {
+.bold, .vnav-text, .vnav li a, .footer button, .footer a, .vbtn, .vtitle, .vtitle-big, .icon-text-title, .icon-only-title, .review-name, .review-title, .day-header-title, .day-title, .brilliant-block-title, .cause-number, .trener-name, .price-table-header, .trening-descr-title, .vmodal-text .vmodal-text-title, .vmodal-title {
   font-family: KievitProBold;
 }
 
@@ -887,11 +887,67 @@ End:  HIDDEN AND VISIBLE UTILITIES
 }
 
 .footer {
-  padding: 10px 15px;
-  background-color: #131313;
+  padding: 30px 0;
+  background-color: #1d1d1b;
 }
 
-.transition, .vnav li a, .vnav li a:after, .vbtn, .vbtn:before, .vmain-form input, .vmain-form-line, .brilliant-block-inner, .brilliant-block-title, .slider .owl-prev,
+.footer-list {
+  font-size: 0;
+}
+
+.footer-list li {
+  display: block;
+}
+
+.footer button, .footer a {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer button {
+  color: #9c9b9c;
+  outline: none;
+}
+
+.footer button:hover {
+  color: #b5b5b5;
+}
+
+.footer a {
+  color: #cad401;
+}
+
+@media (max-width: 1024px) {
+  .footer-list {
+    text-align: center;
+  }
+  .footer-list li {
+    margin-bottom: 15px;
+  }
+  .footer-list li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer {
+    padding: 15px 0;
+  }
+  .footer-list {
+    text-align: right;
+  }
+  .footer-list li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .footer-list li:last-child {
+    margin-right: 0;
+  }
+}
+
+.transition, .vnav li a, .vnav li a:after, .footer button, .vbtn, .vbtn:before, .vmain-form input, .vmain-form-line, .brilliant-block-inner, .brilliant-block-title, .slider .owl-prev,
 .slider .owl-next, .vtabs-list a, .vtabs-list a:after {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -956,7 +1012,7 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 767px) {
-  .max-sm-mb:not(:last-child), .icon-text-wrap:not(:last-child), .icon-only-wrap:not(:last-child), .question-toggle:not(:last-child), .trening-wrap:not(:last-child) {
+  .max-sm-mb:not(:last-child), .icon-text-wrap:not(:last-child), .icon-only-wrap:not(:last-child), .question-toggle:not(:last-child), .trening-wrap:not(:last-child), .trening-descr-wrap:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1258,6 +1314,10 @@ input:focus + .vmain-form-line {
   .vtitle {
     font-size: 40px;
   }
+}
+
+.vtitle-letter {
+  line-height: 1.1;
 }
 
 .vtitle-letter:first-letter {
@@ -2646,24 +2706,24 @@ input:focus + .vmain-form-line {
 }
 
 @-webkit-keyframes moveArrowHorizontal {
-  0, 100% {
+  from, to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   50% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
 @keyframes moveArrowHorizontal {
-  0, 100% {
+  from, to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   50% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
@@ -2675,6 +2735,9 @@ input:focus + .vmain-form-line {
 }
 
 @media (max-width: 767px) {
+  .what-partner-section {
+    padding-top: 0;
+  }
   .what-partner .vtitle {
     font-size: 24px;
     line-height: 1.2;
@@ -2706,6 +2769,109 @@ input:focus + .vmain-form-line {
   }
   .what-partner-btn {
     margin-top: 30px;
+  }
+}
+
+.remember-title {
+  margin-bottom: 30px;
+}
+
+.remember-block {
+  position: relative;
+  margin-top: 30px;
+}
+
+.remember-block-title {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 15px;
+  font-size: 24px;
+}
+
+.remember-block-body {
+  line-height: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .remember-block {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .remember-block {
+    margin-top: 60px;
+    padding: 25px 15px;
+    border: 1px solid #ddd;
+  }
+  .remember-block-title {
+    position: absolute;
+    left: 15px;
+    top: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .remember-section {
+    overflow: hidden;
+  }
+  .remember-block {
+    padding: 45px 0 19px;
+    background: url("../img/remember.png") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .remember-block-title {
+    position: absolute;
+    left: 45px;
+    top: 1px;
+    padding-left: 0;
+  }
+  .remember-block-body {
+    padding: 0 30px;
+  }
+  .remember-title {
+    font-size: 30px;
+  }
+  .remember-title-big {
+    margin-bottom: 30px;
+  }
+  .remember-image img {
+    max-width: none;
+    width: 500px;
+    margin-top: 70px;
+  }
+}
+
+.trening-descr-header {
+  margin-bottom: 15px;
+}
+
+.trening-descr-title {
+  font-size: 22px;
+}
+
+.trening-descr-image, .trening-descr-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.trening-descr-image {
+  margin-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .trening-descr-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .trening-descr {
+    padding-left: 60px;
+  }
+  .trening-descr-body {
+    font-size: 24px;
+    padding-left: 90px;
   }
 }
 
@@ -2822,6 +2988,32 @@ input:focus + .vmain-form-line {
   clear: both;
 }
 
+.vmodal-text .vmodal-header {
+  background-color: #e8e8e8;
+}
+
+.vmodal-text .vmodal-body {
+  background-color: #f5f5f5;
+}
+
+.vmodal-text .vmodal-text-title {
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #cad401;
+}
+
+@media (min-width: 768px) {
+  .vmodal-text .vmodal-text-title {
+    font-size: 19px;
+  }
+}
+
+.vmodal-text .vmodal-box {
+  padding: 40px 15px;
+}
+
 .vmodal-body {
   font-size: 15px;
 }
@@ -2843,8 +3035,8 @@ input:focus + .vmain-form-line {
 
 @media (min-width: 768px) {
   .vmodal-body-inner {
-    padding: 0 30px;
-    height: 400px;
+    padding: 15px 30px;
+    height: 360px;
   }
 }
 

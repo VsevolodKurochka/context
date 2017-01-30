@@ -1,5 +1,53 @@
 .footer{
 	@extend .cf;
-	padding: 10px 15px;
-	background-color: #131313;
+	padding: 30px 0;
+	background-color: setColor(dark);
+	&-list{
+		font-size: 0;
+		li{
+			display: block;
+		}
+	}
+	button,a{
+		background-color: transparent;
+		border: none;
+		font-size: 18px;
+		text-decoration: none;
+		@extend .bold;
+	}
+	button{
+		color: #9c9b9c;
+		outline: none;
+		@extend .transition;
+		&:hover{
+			color: #b5b5b5;
+		}
+	}
+	a{
+		color: setColor(main);
+	}
+	@include resp-max(md){
+		&-list{
+			text-align: center;
+			li{
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	@include resp-min(md){
+		padding: 15px 0;
+		&-list{
+			text-align: right;
+			li{
+				display: inline-block;
+				margin-right: 15px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }

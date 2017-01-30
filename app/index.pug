@@ -366,16 +366,53 @@ block content
 							p.pocket-sale.bold 2 билетов - <br> <span class="color-main">15% скидка</span>
 							.pocket-button
 								+button("vbtn vbtn-effect-bounce-top vbtn-main-second-border", "#modalform") Забрать скидку
-	section.vsection
+	section.vsection.what-partner-section
 		.vcontainer
 			.vrow.what-partner
 				h3.vtitle.vtitle-letter Хотите <span class="color-main">стать партнёром</span> и <span class="color-main">продвигать свой бренд на тренинге</span> самого титулованного тренера по личностному росту и мотивации в СНГ?
 				.what-partner-btn
 					.what-partner-btn-inner.block-inline
 						+button("vbtn vbtn-effect-bounce-top vbtn-main-second", "#modalform") Да, хочу стать партнёром
+	section.vsection
+		.vcontainer
+			.vrow.flex-just-cont-center
+				.vak-xs-12.vak-sm-6.trening-descr-wrap
+					.trening-descr
+						.trening-descr-header
+							.trening-descr-image: img(src="img/trening-descr1.png")
+							p.trening-descr-title Формат
+						.trening-descr-body
+							p Тренинг длится <span class="black">3 полных дня <br class="vvisible-lg">(28, 29, 20 апреля с 10:00 до 21:00)</span><br class="vvisible-lg"> и пройдет в комфортабельном конференц-зале в Киеве
+				.vak-xs-12.vak-sm-6.trening-descr-wrap
+					.trening-descr
+						.trening-descr-header
+							.trening-descr-image: img(src="img/trening-descr2.png")
+							p.trening-descr-title Размер группы
+						.trening-descr-body
+							p От <span class="black">75</span> до <span class="black">100</span> человек
 	+reviewVideo('img/homich.png', 'Михаил Хомич', 'Руководитель ассоциации менторов бизнес школы Сколково. Старший преподаватель МГИМО и МГУ. Автор программы «Займемся делом» на ВестиFM', '«Первое что бросилось в глаза - этот тренинг не похож на все остальные»', 'https://www.youtube.com/embed/jv3BL_xIS2s?list=PL2Fl2oMRArgOXEr7fQivPL-1yYf1Q2Yp0')
 		p Я ждал стандартных разговоров о том, как добиваться результата, как мотивировать себя и всё в таком духе. Мое удивление было велико, когда я понял, что это не так.
 		p “Контекст” дал мне главное - я посмотрел на себя со стороны и понял, почему у меня не получается достигать многие из тех целей, что я себе ставлю. И, что еще важнее - мне стал понятен конкретно сам процесс достижения целей и я полюбил этот процесс и все, что с ним связано 
+	section.vsection.remember-section
+		.vcontainer
+			.vrow
+				.vak-xs-12.vak-md-7
+					h3.vtitle.vtitle-letter.vtitle-letter-change.remember-title-big Есть ли у Вас ощущение, что сегодняшний день уже повторялся сотни раз до этого?
+					p.vtitle-small.remember-title.bold И если не изменить это сейчас… то <span class="color-main-second">когда</span>?
+					+button("vbtn vbtn-effect-bounce-bottom vbtn-main-second", "#modalform") Я участвую в тренинге!
+					.remember-block.bold
+						span.remember-block-title.color-main Помните!
+						.remember-block-body.italic
+							p Если Вы решили отложить решение изменить свою жизнь «на потом», на самом деле Вы уже приняли решение - оставить всё как есть
+				.vak-xs-12.vak-md-5
+					.remember-image
+						img(src="img/calendar.png")
+	footer.footer
+		.vcontainer
+			ul.footer-list
+				li: button(data-func="vmodal" data-target="#modalPolitika") Политика конфиденциальности
+				li: button(data-func="vmodal" data-target="#modalOtkaz") Отказ от ответственности
+				li: a(href="tel: +38 (093) 537 30 95") +38 (093) 537 30 95
 block dev
 	//- 	+button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalform") Button_text_big1
 	//- +button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalvideo")(data-video="https://www.youtube.com/embed/Iutk7AboLZI" data-source="youtube" data-title="Уроки JavaScript Практика #3 Пишем свой CSS генератор") Button_text_big
@@ -399,11 +436,23 @@ block dev
 							span.vmain-form-line
 						.vmain-form-row.vmain-form-btn-wrap
 							button.vbtn.vbtn-effect-bounce-top(type="submit") Получить!
-	.vmodal.vmodal-transparent#modalvideo
+	.vmodal.vmodal-text#modalOtkaz
 		.vmodal-dialog.big
 			button(type="button" class="vmodal-close" data-close="vmodal") &times;
 			.vmodal-box
-				p.vmodal-title
+				p.vmodal-text-title Отказ от ответственности
 				.vmodal-body
-					.vmodal-video
-					// +button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalform") Button_text_big1
+					.vmodal-body-inner
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	.vmodal.vmodal-text#modalPolitika
+		.vmodal-dialog.big
+			button(type="button" class="vmodal-close" data-close="vmodal") &times;
+			.vmodal-box
+				p.vmodal-text-title Политика конфиденциальности
+				.vmodal-body
+					.vmodal-body-inner
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -1133,15 +1133,18 @@
 			position: relative;
 			@at-root{
 				@keyframes moveArrowHorizontal{
-					0,100%{
+					from, to{
 						transform: translateX(0);
+					}
+					50%{
+						transform: translateX(5px);
 					}
 					// 20%{
 					// 	transform: translateX(-5px);
 					// }
-					50%{
-						transform: translateX(-10px);
-					}
+					// 50%{
+					// 	transform: translateX(-10px);
+					// }
 					// 60%{
 					// 	transform: translateX(-5px);
 					// }
@@ -1173,6 +1176,9 @@
 		}
 	}
 	@include resp-max(sm){
+		&-section{
+			padding-top: 0;
+		}
 		.vtitle{
 			font-size: 24px;
 			line-height: 1.2;
@@ -1201,6 +1207,105 @@
 		margin-top: -100px;
 		&-btn{
 			margin-top: 30px;
+		}
+	}
+}
+.remember{
+	&-title{
+		margin-bottom: 30px;
+	}
+	&-block{
+		position: relative;
+		margin-top: 30px;
+		&-title{
+			display: inline-block;
+			background-color: #fff;
+			padding: 0 15px;
+			font-size: 24px;
+		}
+		&-body{
+			line-height: 1.1;
+		}
+	}
+	@include resp-max(md){
+		&-block{
+			margin-bottom: 45px;
+		}
+	}
+	@include resp-max(lg){
+		&-block{
+			margin-top: 60px;
+			padding: 25px 15px;
+			border: 1px solid #ddd;
+			&-title{
+				position: absolute;
+				left: 15px;
+				top: -15px;
+			}
+		}
+	}
+	@include resp-min(lg){
+		&-section{
+			overflow: hidden;
+		}
+		&-block{
+			padding: 45px 0 19px;
+			@include bg('../img/remember.png');
+			&-title{
+				position: absolute;
+				left: 45px;
+				top: 1px;
+				padding-left: 0;
+			}
+			&-body{
+				padding: 0 30px;
+			}
+		}
+		&-title{
+			font-size: 30px;
+			&-big{
+				margin-bottom: 30px;
+			}
+		}
+		&-image img{
+			max-width: none;
+			width: 500px;
+			margin-top: 70px;
+		}
+	}
+}
+.trening-descr{
+	&-wrap{
+		@extend .max-sm-mb;
+	}
+	&-header{
+		margin-bottom: 15px;
+	}
+	&-title{
+		font-size: 22px;
+		@extend .bold;
+	}
+	&-image,
+	&-title{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&-image{
+		margin-right: 15px;
+	}
+	@include resp-min(xs){
+		&-title{
+			font-size: 30px;
+		}
+	}
+	@include resp-min(md){
+		padding-left: 60px;
+		&-title{
+
+		}
+		&-body{
+			font-size: 24px;
+			padding-left: 90px;
 		}
 	}
 }

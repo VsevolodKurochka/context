@@ -5,9 +5,9 @@
 	@include fs('vtitle');
 	@extend .bold;
 	&-letter{
+		line-height: 1.1;
 		&:first-letter{
 			font-size: 120%;
-			
 		}
 		&-change:first-letter{
 			color: setColor(main);

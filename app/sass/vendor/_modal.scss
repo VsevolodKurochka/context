@@ -68,6 +68,28 @@
 		position: relative;
 		@include cf();
 	}
+	&-text &{
+		&-header{
+			background-color: #e8e8e8;
+		}
+		&-body{
+			background-color: #f5f5f5;        
+		}    
+		&-text-title{
+			padding: 15px;
+			margin-bottom: 15px;
+			text-align: center;
+			font-size: 15px;
+			background-color: setColor(main);
+			@extend .bold;
+			@include resp-min(sm){
+				font-size: 19px;
+			}
+		} 
+		&-box{
+			padding: 40px 15px;
+		}
+	} 
 	&-body{
 		font-size: 15px;
 		&-inner{
@@ -82,8 +104,8 @@
 				}
 			}
 			@include resp-min(sm){
-				padding: 0 30px;
-				height: 400px;
+				padding: 15px 30px;
+				height: 360px;
 			}
 		}
 	}
@@ -168,14 +190,7 @@
 		width: 100%;
 		min-height: 300px;
 	}
-	// &-text &{
-	// 	&-header{
-	// 		background-color: #e8e8e8;
-	// 	}
-	// 	&-body{
-	// 		background-color: #f5f5f5;        
-	// 	}     
-	// }  
+	 
 	@include resp-min(xs){
 		&-dialog{
 			&-default{
