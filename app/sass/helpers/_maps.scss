@@ -17,6 +17,7 @@ $grid-system: (
 /// @prop {String} key - Имя точки остановки для медиа-запроса
 /// @prop {Number} value - Значение точки остановки
 $breakpoints: (
+	bigLg     : 1500px,
 	lg        : 1200px,
 	md        : 1025px,
 	sm        : 768px,
@@ -62,15 +63,16 @@ $colors: (
 /// @prop {Number} value - Значение размера шрифта
 $sizes: (
 	'vtitle-big': (
-		xs:   90px,
-		sm:   120px
+		xs:    90px,
+		lg:    80px,
+		bigLg: 120px
 	),
 	'vtitle': (
 		sm:   35px,
 		md:   40px
 	),
 	'vtitle-small': (
-		sm:   30px
+		sm:   24px
 	)
 );
 

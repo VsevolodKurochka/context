@@ -1,20 +1,26 @@
 .greeting{
 	background-color: #efefef;
 	overflow: hidden;
+	&-names{
+		p:not(:last-child){
+			margin-bottom: 7.5px;
+		}
+	}
 	&-names,
 	&-title-small{
-		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 	@include resp-max(md){
 		padding-bottom: 0;
 	}
 	@include resp-min(md){
+		padding-top: 15px;
 		padding-bottom: 140px;
 	}
 	@include resp-min(sm){
 		&-title-small{
-			font-size: 24px;
+			font-size: 20px;
 		}
 	}
 }
@@ -23,7 +29,6 @@
 		font-size: 0;
 	}
 	@include resp-max(sm){
-		position: relative;
 		&-1{
 			left: 10%;
 		}
@@ -32,6 +37,7 @@
 		}
 	}
 	@include resp-max(md){
+		position: relative;
 		&-wrapper{
 			position: relative;
 			bottom: -30px;
@@ -56,20 +62,31 @@
 		position: absolute;
 		&-1{
 			left: -30px;
+			top: 30px;
 		}
 		&-2{
 			right: -130px;
 			top: 70px;
 		}
+		@include resp-max(bigLg){
+			width: 350px;
+			&-1{				
+				left: -70px;
+			}
+			&-2{
+				right: 0;
+			}
+		}
 	}
 	@include resp-min(lg){
 		&-1{
 			top: 40px;
-			left: -70px;
 		}
 		&-2{
-			right: -70px;
 			top: 100px;
+		}
+		@include resp-max(bigLg){
+			width: 390px;
 		}
 	}
 }
@@ -92,7 +109,7 @@
 		width: 275px;
 		position: absolute;
 		right: 15px;
-		bottom: -55px;
+		bottom: -70px;
 		padding-left: 80px;
 		text-align: right;
 		&:after{
@@ -147,11 +164,268 @@
 	}
 	@include resp-min(lg){
 		&-small{
-			left: -351px;
-			width: 920px;
+			left: -380px;
+			width: 950px;
 			iframe{
 				width: 520px;
 				height: 290px;
+			}
+		}
+	}
+}
+.icon{
+	&-text{
+		&-wrap{
+			@extend .max-sm-mb;
+		}
+		&-header{
+			margin-bottom: 15px;
+		}
+		&-image{
+			display: inline-block;
+			width: 70px;
+			@extend .vertical-image;
+		}
+		&-title{
+			font-size: 24px;
+			@extend .bold;
+		}
+	}
+	@include resp-min(xs){
+		&-title{
+			font-size: 30px;
+		}
+	}
+	@include resp-max(md){
+		&-text{
+			&-header{
+				text-align: center;
+			}
+			&-image{
+				margin-bottom: 7.5px;
+			}
+		}
+	}
+	@include resp-min(md){
+		&-text{
+			&-image,
+			&-title{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			&-image{
+				height: 110px;
+			}
+			&-title{
+				width: calc(100% - 100px);
+				margin-left: 15px;
+			}
+		}
+	}
+	&-only{
+		&-wrap{
+			@extend .max-sm-mb;
+		}
+		&-header{
+			margin-bottom: 15px;
+		}
+		&-image{
+			display: inline-block;
+			height: 150px;
+			text-align: left;
+			@extend .vertical-image;
+		}
+		&-title{
+			font-size: 21px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #e2e2e2;
+			@extend .bold;
+		}
+		@include resp-max(lg){
+			&-header{
+				text-align: center;
+			}
+			@include resp-min(sm){
+				&-title{
+					max-width: 270px;
+					margin-left: auto;
+					margin-right: auto;
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+		@include resp-min(md){
+			&-title{
+				padding-right: 20px;
+			}
+		}
+	}
+}
+.review{
+	&-section{
+		padding-bottom: 0;
+		margin-bottom: 100px;
+	}
+	&-header{
+		width: 100%;
+		padding-bottom: 15px;
+		&-inner{
+			align-items: center;
+		}
+		
+	}
+	&-image{
+		font-size: 0;
+	}
+	&-name,
+	&-title{
+		font-size: 24px;
+		line-height: 1;
+		@extend .bold;
+	}
+	&-title,
+	&-name,
+	&-link{
+		color: setColor(white);
+	}
+	
+	&-link{
+		text-decoration: none;
+	}
+	&-body{
+		background-color: setColor(white);
+		box-shadow: 0 10px 16px rgba(0,0,0,.15);
+		padding: 30px 15px;
+		margin-bottom: -70px;
+		p{
+			margin-bottom: 15px;
+		}
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+	@include resp-min(sm){
+		&-title,
+		&-name{
+			font-size: 30px;
+		}
+	}
+	@include resp-max(md){
+		&-header{
+			text-align: center;
+		}
+		&-image,
+		&-name,
+		&-pos{
+			margin-bottom: 15px;
+		}
+		&-title{
+			margin-top: 15px;
+		}
+		&-video-inner{
+			min-height: 250px;
+			margin-bottom: 15px;
+		}
+		@include resp-min(sm){
+			&-title{
+				padding-left: 70px;
+				padding-right: 70px;
+			}
+		}
+	}
+	@include resp-max(lg){
+		&-video-wrap{
+			background-color: setColor(main);
+		}
+	}
+	@include resp-min(md){
+		&-image,
+		&-name,
+		&-pos,
+		&-inf{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&-inf-pos{
+			width: 260px;
+		}
+		&-image,
+		&-name{
+			margin-right: 30px;
+		}
+		&-pos{
+			position: relative;
+			top: 5px;
+		}
+		&-body{
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			top: -30px;
+			left: 15px;
+			p{
+				margin-bottom: 25px;
+			}
+		}
+	}
+	@include resp-min(lg){
+		&-body{
+			width: 940px;
+			font-size: 24px;
+		}
+	}
+
+	&-header{
+		&-video{
+			position: relative;
+			padding-top: 20px;
+			padding-bottom: 35px;
+			&-inner{
+				margin-bottom: 15px;
+			}
+			@include resp-min(lg){
+				padding-left: 80px;
+				&:after{
+					width: 1400px;
+					content: "";
+					position: absolute;
+					top: 0;
+					height: 100%;
+					background-color: setColor(main);
+					z-index: -1;
+				}
+			}
+		}
+	}
+	&-video-wrap &-name{
+		margin-bottom: 7.5px;
+	}
+	&-video-inner{
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.question{
+	&-toggle{
+		@extend .max-sm-mb;
+		@include resp-max(md){
+			&-image-inner{
+				text-align: center;
+			}
+		}
+		@include resp-min(sm){
+			&:not(:last-child){
+				margin-bottom: 75px;
+			}
+		}
+		@include resp-min(md){
+			align-items: center;
+			&:nth-child(odd) &-image{
+				order: 2;
 			}
 		}
 	}

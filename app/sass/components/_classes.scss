@@ -24,6 +24,11 @@
     }
   }
 }
+.bg{
+  &-main{
+    background-color: setColor(main);
+  }
+}
 @for $i from 1 through 3{
   .index-#{$i}{
     z-index: $i;
@@ -46,4 +51,14 @@
   h#{$i}{
     @extend %fwnormal;
   }
+}
+.max-sm-mb{
+  @include resp-max(sm){
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}
+.ovh{
+  overflow: hidden;
 }

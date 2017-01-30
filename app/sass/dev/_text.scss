@@ -4,16 +4,30 @@
 	font-size: 30px;
 	@include fs('vtitle');
 	@extend .bold;
+	&-letter{
+		&:first-letter{
+			font-size: 120%;
+			
+		}
+		&-change:first-letter{
+			color: setColor(main);
+		}
+	}
 	&-small{
 		line-height: 1.2;
 		margin: 12px 0;
 		font-size: 17px;
-		@include fs('vtitle-small');	
+		@include fs('vtitle-small');
+		@include resp-max(md){
+			&-text{
+				margin-bottom: 30px;
+			}
+		}
 	}
 	&-big{
 		line-height: 1;
 		font-size: 60px;
-		margin: 30px 0;
+		margin: 25px 0;
 		@include fs('vtitle-big');
 		@extend .bold;
 	}
@@ -30,40 +44,46 @@
 			}
 		}
 	}
-	&-letter{
-		&:first-letter{
-			font-size: 50px;
-			color: setColor(main);
-		}
-	}
 	@include resp-min(xs){
-		&-clone{
-			&-k{
-				&:after{
-					left: 7px;
-					top: 7px;
-					width: 49px;
-					height: 50px;
-				}
-			}
+		&-clone-k:after{
+			left: 7px;
+			top: 10px;
+			width: 52px;
+			height: 50px;
 		}
 	}
-	@include resp-min(sm){
-		&-clone{
-			&-k{
-				&:after{
-					left: 9px;
-					top: 10px;
-					width: 64px;
-					height: 61px;
-				}
-			}
-		}
-	}
+	// @include resp-min(sm){
+	// 	&-clone-k:after{
+	// 		left: 9px;
+	// 		top: 10px;
+	// 		width: 64px;
+	// 		height: 61px;
+	// 	}
+	// }
+
 	@include resp-min(md){
 		&-letter:first-letter{
 			font-size: 60px;
 		}
+	}
+	@include resp-min(lg){
+		&-clone-k:after{
+			left: 6px;
+			width: 46px;
+			height: 41px;
+		}
+	}
+	@include resp-min(bigLg){
+		&-clone-k:after{
+			left: 9px;
+			width: 64px;
+			height: 61px;
+		}
+	}
+}
+.text-block{
+	p:not(:last-child){
+		margin-bottom: 15px;
 	}
 }
 .text{

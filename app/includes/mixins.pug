@@ -13,3 +13,16 @@ mixin button(buttonClass, modalTarget)
 		- modalTarget = "#modalform"
 
 	button(class=buttonClass data-func="vmodal" data-target=modalTarget)&attributes(attributes): block
+mixin review(img, name, pos, link)
+	section.vsection.review-section.bg-main
+		.vcontainer
+			.review-header
+				.vrow.review-header-inner
+					.vak-xs-12.vak-md-7
+						.review-image: img(src=img)
+						p.review-name= name
+						p.review-pos.italic= pos
+					.vak-xs-12.vak-md-5.min-md-right
+						a(href="#").review-link= link
+			.review-body
+				block 
