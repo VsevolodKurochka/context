@@ -1,5 +1,5 @@
 .vtitle{
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 	line-height: 1;
 	font-size: 30px;
 	@include fs('vtitle');
@@ -30,6 +30,12 @@
 		margin: 25px 0;
 		@include fs('vtitle-big');
 		@extend .bold;
+		@include resp-min(lg){
+			@include resp-max(bigLg){
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
 	}
 	&-clone{
 		&-k{
@@ -43,6 +49,12 @@
 				@include bg('../img/k-clone.png');
 			}
 		}
+	}
+	&-center{
+		margin-bottom: 45px;
+	}
+	&-center &{
+		margin-bottom: 15px;
 	}
 	@include resp-min(xs){
 		&-clone-k:after{
@@ -68,9 +80,9 @@
 	}
 	@include resp-min(lg){
 		&-clone-k:after{
-			left: 6px;
-			width: 46px;
-			height: 41px;
+			left: 5px;
+			width: 40px;
+			height: 33px;
 		}
 	}
 	@include resp-min(bigLg){

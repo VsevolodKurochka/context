@@ -8,12 +8,12 @@ block content
 				.vak-xs-12.vak-md-7
 					p Культовый тренинг по достижению сверхрезультатов <br class="vhidden-xs"> от самого популярного дуэта тренеров в СНГ*
 					h1.vtitle-big <span class="color-main vtitle-clone-k">К</span>онтекст
-					h2.vtitle-small Программа по <span class="black">раскрытию потенциала</span> для достижения целей в личной жизни, карьере, деньгах и здоровье
+					h2.vtitle-small.greeting-vtitle-small Программа по <span class="black">раскрытию потенциала</span><br class="vhidden-xs"> для достижения целей в личной жизни,<br class="vhidden-xs"> карьере, деньгах и здоровье
 					.italic.greeting-names
 						p <span class="color-main">*</span> <span class="bold">Владимир Герасичев</span> - Эксперт в личной эффективности, лидерстве и командообразовании. Автор 2-х фильмов и книги-бестселлера
 						p <span class="color-main">*</span> <span class="bold">Арсен Рябуха</span> - Профессионал в области межличностных отношений и переговоров. Консультирует ТОП-менеджмент крупнейших брендов СНГ
-					p.greeting-title-small Даты проведения: <br class="vvisible-xs"><span class="black">28, 29, 20 апреля, Киев</span>
-					+button("vbtn vbtn-effect-shutter-vertical-out vbtn-main-second", "#modalform") Забронировать место на тренинг
+					p.greeting-title-small Даты проведения: <br class="vvisible-xs"><span class="black">28, 29, 30 апреля, Киев</span>
+					+button("vbtn vbtn-effect-shutter-vertical-out vbtn-main-second greeting-btn", "#modalform") Забронировать место на тренинг
 				.vak-xs-12.vak-md-5
 					.man-wrapper
 						.man.man-1: img(src="img/man1.png")
@@ -105,27 +105,280 @@ block content
 						.icon-only-image: img(src="img/icon-shturval.png")
 						p.icon-only-title Для тех, кто <span class="color-main">еще не нашел себя</span>
 					p.icon-body И вроде бы всё хорошо, но есть стойкое чувство - «что-то не то». Тем ли я занимаюсь, живу ли так, как хочу - на эти и другие важные вопросы мы найдем ответы на тренинге
-	section.vsection.ovh.review-video-wrap
+	+reviewVideo('img/ruslan.png', 'Руслан Раджапов', 'CEO и управляющий партнёр сети ресторанов Correa’s', '«За два месяца обьем продаж вырос до 100 тыс. гривен»', 'https://www.youtube.com/embed/hsvF4Tqy6hU')
+		p «Я занимаюсь архитектурным проектированием. Во время коучинга я получил много полезной информации и знаний, сумел сделать посадочную страницу своего проекта, а объем моих продаж за эти два месяца вырос до 100 тыс. грн.
+		p Понравилось то, что подача материала очень понятная и доступная. Сотрудники LiftMarketing отзывчивы, а бизнес-завтраки с Андреем и Владом очень помогли разложить все свои мысли и идеи “по полочкам”..
+		p Но самое главное, я решился на создание архитектурной мастерской - без тренинга я бы задумался об этом не раньше чем через год»
+	section.vsection
 		.vcontainer
-			.review-header.review-header-video
-				.vrow.review-header-inner.review-header-video-inner
-					.vak-xs-12.vak-md-6
-						.review-image: img(src="img/ruslan.png")
-						.review-inf
-							p.review-name Руслан Раджапов
-							p.review-inf-pos CEO и управляющий партнёр сети ресторанов Correa’s 
-					.vak-xs-12.vak-md-6
-						p.review-title «За два месяца обьем продаж вырос до 100 тыс. гривен»
-				.vrow
-					.vak-xs-12.vak-md-6.review-video-inner
-						iframe(src="https://www.youtube.com/embed/hsvF4Tqy6hU" frameborder="0" allowfullscreen)
-					.vak-xs-12.vak-md-6.text-block.italic
-						p «Я занимаюсь архитектурным проектированием. Во время коучинга я получил много полезной информации и знаний, сумел сделать посадочную страницу своего проекта, а объем моих продаж за эти два месяца вырос до 100 тыс. грн.
-						p Понравилось то, что подача материала очень понятная и доступная. Сотрудники LiftMarketing отзывчивы, а бизнес-завтраки с Андреем и Владом очень помогли разложить все свои мысли и идеи “по полочкам”..
-						p Но самое главное, я решился на создание архитектурной мастерской - без тренинга я бы задумался об этом не раньше чем через год»
+			h3.vtitle.vtitle-letter.vtitle-letter-change Насыщенная 3-дневная программа, <br class="vhidden-xs"> которая разбудит в Вас невероятную силу:
+			.vrow
+				.vak-xs-12.vak-md-4.day-wrap
+					.day
+						.day-header
+							.day-img: img(src="img/day.png")
+							p.day-header-title День 1
+						p.day-title Что Вам мешает
+						ul.day-body.list.list-check-green
+							li Теоретический блок, знакомство
+							li Постановка целей Вашей тренировки
+							li Выяснение, какие взгляды и внутренние ограничения мешают Вам жить так, как Вы мечтаете
+							li Личная тренировка
+				.vak-xs-12.vak-md-4.day-wrap
+					.day
+						.day-header
+							.day-img: img(src="img/day.png")
+							p.day-header-title День 2
+						p.day-title Вы в команде
+						ul.day-body.list.list-check-green
+							li Теоретический блок
+							li Личная тренировка
+							li Создание навыков партнерства и работы в команде
+							li Обучающая игра
+				.vak-xs-12.vak-md-4.day-wrap
+					.day
+						.day-header
+							.day-img: img(src="img/day.png")
+							p.day-header-title День 3
+						p.day-title Решение Вашей проблемы
+						ul.day-body.list.list-check-green
+							li Теоретический блок
+							li Личная тренировка
+							li Анализ вашей ситуации и ситуаций других участников
+							li Упражнения
+							li Постановка целей
+	section.vsection.ratio-section
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Что еще будет на каждом из 3-х дней тренинга:
+			.flex.ratio-wrap
+				.vak-xs-12.vak-md-8.vak-lg-9.ratio-practic
+					p.ratio-title <span class="bold">Практика</span> <span>(работа в парах, в группах и с тренером)</span>
+					ul.list.list-check-green
+						li Личная работа тренера с участниками
+						li Работа в парах и небольших группах
+						li Постановка и проверка домашних заданий
+						li Разбор реальных ситуаций (кейсов)
+						li Декларация контроль достижения личных целей каждого участника на время тренинга
+					p.ratio-percentage.ratio-practic-percentage-wrap.bold <span class="ratio-practic-percentage">0</span><sup>%</sup> 
+				.vak-xs-12.vak-md-4.vak-lg-3.ratio-theory.ratio-theory-fluid
+					p.ratio-title <span class="bold">Теория</span>
+					p.ratio-percentage.ratio-theory-percentage-wrap.bold <span class="ratio-theory-percentage">100</span><sup>%</sup> 
+	section.vsection
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Какие личные качества Вы прокачаете на тренинге:
+			.brilliant
+				.brilliant-block.brilliant-block-1
+					.brilliant-block-inner
+						p.brilliant-block-title Тотальная ответственность за свою жизнь
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative.brilliant-block-2
+					.brilliant-block-inner
+						p.brilliant-block-title Открытость ко всему новому
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative-more.brilliant-block-3
+					.brilliant-block-inner
+						p.brilliant-block-title Сверхрезультативность
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative-more.brilliant-block-4
+					.brilliant-block-inner
+						p.brilliant-block-title Приверженность целям
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-5
+					.brilliant-block-inner
+						p.brilliant-block-title Умение вкладываться и отдавать
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative-more.brilliant-block-6
+					.brilliant-block-inner
+						p.brilliant-block-title Мышление «за рамками»
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-7
+					.brilliant-block-inner
+						p.brilliant-block-title Безусловное партнерство
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative-more.brilliant-block-8
+					.brilliant-block-inner
+						p.brilliant-block-title Надежность и умение держать слово
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative-more.brilliant-block-9
+					.brilliant-block-inner
+						p.brilliant-block-title Гибкость
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+				.brilliant-block.brilliant-block-skew-negative-more.brilliant-block-10
+					.brilliant-block-inner
+						p.brilliant-block-title Смелость
+						p.brilliant-block-text <span class="black">На что влияет:</span> скорость принятия решений, качество жизни
+			.vbtn-single.text-center
+				+button("vbtn vbtn-effect-skew vbtn-main-second", "#modalform") Изменить свое мышление и выйти на новый уровень
+	+review("img/urii.png", "Юрий Белонощенко", "Финансист, совладелец сети детских развивающих центров «Бэби-клуб», отец 4 детей, триатлет", "facebook.com/belonoschenko")
+		p Меня до сих пор радуют открытия, сделанные мной на программе:
+		p 1. - Каждый из нас является автором своей жизни на 100%. <br> 2. - Если ты чего-то не имеешь, значит, ты этого на самом деле не хочешь. Если же на самом деле хочешь – работай изо всех сил! <br> 3. - Быть целостным – думать, говорить и действовать в одном направлении. Прежде всего, не врать себе!
+		p Да, я бы рекомендовал поучиться в Business Relations и особенно тем, кто хочет достичь новых высот или экстраординарных результатов.
+	section.vsection
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Три ключевые причины, по которым стоит <br class="vhidden-xs">посетить тренинг «<span class="color-main-second italic">Контекст</span>»:
+			.vrow
+				.vak-xs-12.vak-md-4.cause-wrap
+					.cause
+						.cause-header
+							span.cause-number 1
+							.cause-image: img(src="img/rotation.png")
+						p.cause-body <span class="black">Быстрый результат</span>, который возможен благодаря работе в группе, высокой экспертности тренера и особой вдохновляющей атмосферы, в которой невозможно не делать
+				.vak-xs-12.vak-md-4.cause-wrap
+					.cause
+						.cause-header
+							span.cause-number 2
+							.cause-image: img(src="img/hand.png")
+						p.cause-body <span class="black">Решение казалось неразрешимой проблемы</span>, которая преследовала Вас годами и казалось, что выхода нет.  Он есть, и находите его вы сами  — удивляясь, как это просто
+				.vak-xs-12.vak-md-4.cause-wrap
+					.cause
+						.cause-header
+							span.cause-number 3
+							.cause-image: img(src="img/icon-mind.png")
+						p.cause-body <span class="black">Переход на новый этап и рост качества жизни</span>, благодаря чему Вы отбросите всё, что сдерживало Вас все эти годы и начнете двигаться к своим целям легко, быстро и «в кайф»
+	section.vsection
+		.vcontainer
+			.slider-wrap
+				h3.vtitle.vtitle-letter.vtitle-letter-change Руководители таких компаний уже прошли этот тренинг:
+				.owl-carousel.slider
+					- for (var i = 1; i <= 20; i++)
+						.owl-item: img(src="img/i_" + i +'.jpg')
+	section.vsection
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Есть ли доказательства эффективности тренинга?
+			p.vtitle-small.vtitle-small-text.bold Опрос, проведенный среди выпускников «Контекста» 2004-2017 гг., показал, <br class="hidden-xs"> каких результатов они достигли после тренинга:
+	+reviewVideo('img/galima.png', 'Галима Ахмадуллина', 'Основатель агентства поиска и развития талантов Galima HR', '«За два месяца обьем продаж вырос до 100 тыс. гривен»', 'https://www.youtube.com/embed/hsvF4Tqy6hU')
+		p «Я занимаюсь архитектурным проектированием. Во время коучинга я получил много полезной информации и знаний, сумел сделать посадочную страницу своего проекта, а объем моих продаж за эти два месяца вырос до 100 тыс. грн.
+		p Понравилось то, что подача материала очень понятная и доступная. Сотрудники LiftMarketing отзывчивы, а бизнес-завтраки с Андреем и Владом очень помогли разложить все свои мысли и идеи “по полочкам”..
+		p Но самое главное, я решился на создание архитектурной мастерской - без тренинга я бы задумался об этом не раньше чем через год»
+	section.vsection
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Какие прорывы Вы совершите после этого тренинга:
+			.vrow.trening-wrapper
+				+trening('img/icon-increase.png')
+					p Совершите <span class="black">мощный толчок к изменениям</span>, о которых давно мечтали, но почему-то постоянно откладывали
+				+trening('img/icon-task.png')
+					p <span class="black">Сложные решения станут простыми</span>, а неподъемные задачи – лишь первым шагом на пути к цели
+				+trening('img/icon-medic.png')
+					p Научитесь жить так, чтобы <span class="black">здоровье улучшалось с каждым днем</span>, а жизненная энергия возрастала
+				+trening('img/icon-power.png')
+					p Ощутите <span class="black">небывалый заряд энергии</span>, веры в себя и уверенности в собственных силах
+				+trening('img/icon-hand.png')
+					p Осознаете, что могло вас сдерживать <span class="black">(страхи, подсознательные ограничения)</span> и избавитесь от них раз и навсегда
+				+trening('img/icon-people.png')
+					p Встретите новых интереснейших <span class="black">друзей, единомышленников</span> и потенциальных бизнес-партнеров
+			.vbtn-single.text-center
+				+button("vbtn vbtn-effect-bounce-top vbtn-main-second", "#modalform") Посетить тренинг и создать новую реальность вокруг себя
+
+	+review("img/falalev.png", "Дмитрий Фалалеев", "Основатель Terra Firrma Медиа-ресурс для инвесторов и предпренимателей", "facebook.com/dmitry.falaleev")
+		p Здесь дают в руки очень сильные инструменты. <br>Главное — понять, хочешь ты меняться или нет. 
+		p Честно говоря, не думал, что тренеры до меня достучаться, а они достучались.
+	section.vsection
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Кто ведет тренинг «<span class="color-main">Контекст</span>»
+			.trener-wrapper
+				.vrow.trener-reorder.trener-row
+					.vak-xs-12.vak-md-5.trener-image
+						img(src="img/man1.png")
+						.trener-video
+							iframe(src="https://www.youtube.com/embed/hsvF4Tqy6hU" frameborder="0" allowfullscreen)
+					.vak-xs-12.vak-md-7
+						p.trener-name Владимир Герасичев
+						p.italic Эксперт в личной эффективности, лидерстве и командообразовании <br class="vhidden-xs">Предприниматель, телеведущий, кинопродюсер
+						ul.list.list-check.list-check-green.trener-list
+							li Основатель, генеральный директор и ведущий бизнес-тренер компании <span class="black">Business Relations</span>
+							li Победитель конкурса «Предприниматель года 2015» компании EY в номинации B2B
+							li Лучший тренер в категории <span class="black">«Лидерство»</span> в 2014-м 
+							li Лучший тренер в категории <span class="black">«Командообразование»</span> в 2014-м (вместе с Арсеном Рябухой)
+							li Ведущий телепередачи «<span class="black">Держать слово с Владимиром Герасичевым</span>» на ТК <span class="black">«ДОЖДЬ»</span>
+							li Автор 2-х фильмов: <span class="black">«Контекст»</span> (вышел в 2011-м на Первом канале с участием Ника Вуйчича, Пьера Кардена, Аркадия Новикова, Евгения Плющенко и др.) и <span class="black">«Жизнь. Инструкция по применению»</span> (вышел в 2013 году на ТНТ)
+							li Автор бестселлера <span class="black">«Dream Team: как создать команду мечты»</span> о философии и практике формирования мощной команды в современных условиях рынка
+							li Практикующий тренер, более <span class="black">20 лет</span> практического опыта преподавания и ведения тренингов. Более 60 000 выпускников
+							li Владимир обучал собственников и ТОП-менеджмент таких компаний: <span class="black">Wrigley, Red Bull, Adidas, DHL, DIXIS, «Верра Моторс», «Сколково», BBDO,  «КИТ Финанс», Sbarro, «Астарта», «Уралсиб», TNK-BP, «Савва», Schwarzkopf &amp; Henkel, AIG, МТС, X5 Retail Group, Sitronix</span> и др.
+				.vrow.trener-row
+					.vak-xs-12.vak-md-5.trener-image
+						img(src="img/man2.png")
+						.trener-video
+							iframe(src="https://www.youtube.com/embed/hsvF4Tqy6hU" frameborder="0" allowfullscreen)
+					.vak-xs-12.vak-md-7
+						p.trener-name Арсен Рябуха
+						p.italic Эксперт в области межличностных отношений <br class="vhidden-xs"> и переговоров. Бизнес-тренер, коуч
+						ul.list.list-check.list-check-green.trener-list
+							li Ведущий бизнес-тренер компании <span class="black">Business Relations</span>
+							li Лучший тренер в категории <span class="black">«Командообразование»</span> в 2014-м (вместе с Владимиром Герасичевым)
+							li Профессионал в сфере организационного развития и формирования команд
+							li Арсен сертифицированный коуч <span class="black">Erickson College International</span> (Канада), основателем которого является Мерилин Аткинсон
+							li Преподавал в <span class="black"><Высшей школе MBA Российской экономической академии им. Плеханова</span>
+							li <span class="black">«Бегун-марафонец»</span>, который смотивировал на бег множество людей
+							li Практикующий тренер, более <span class="black">13 лет</span> практического опыта преподавания и ведения тренингов. Более 35 000 выпускников
+							li Арсен обучал собственников и ТОП-менеджмент таких компаний: <br> <span class="black">Mirax Group, Red Bull, «Верра Моторс»,  TNK-BP, «Город Богов», «Савва», МТС, «Арнест», РТК, Profit Group, «Уралэнерго», «Уралсиб», P&G, Adidas, X5 Retail Group, Event Factory</span> и др.
+	section.vsection
+		.vcontainer
+			h3.vtitle.vtitle-letter.vtitle-letter-change Выберите Ваш вариант участия в тренинге:
+			.vrow.flex-just-cont-center
+				.vak-xs-12.vak-sm-6.vak-lg-4.price-table-wrap.price-table-standart
+					.price-table
+						.price-table-header
+							p Standart
+						.price-table-body
+							ul.price-table-list
+								li Полное участие в 3-х днях тренинга
+								li Раздаточные материалы
+								li Фирменная сумка в подарок
+							.price-table-button
+								+button("vbtn vbtn-effect-bounce-top vbtn-main-second", "#modalform") Забронировать место
+				.vak-xs-12.vak-sm-6.vak-lg-4.price-table-wrap
+					.price-table
+						.price-table-header.dark
+							p Premium
+						.price-table-body
+							ul.price-table-list
+								li Полное участие в 3-х днях тренинга
+								li Раздаточные материалы
+								li Фирменная сумка в подарок
+								li Места в первом ряду
+								li Бизнес-ланч с Владимиром Герасичевым и Арсеном Рябухой, с личным разбором Вашей ситуации
+							.price-table-button
+								+button("vbtn vbtn-effect-bounce-bottom vbtn-main-second-border", "#modalform") Забронировать место
+	section.vsection.pocket-section
+		.vcontainer
+			.text-center.vtitle-center
+				h3.vtitle.vtitle-letter.vtitle-letter-change Коллективные скидки
+				p.vtitle-small.vtitle-small-text.bold Берите друзей и партнеров - с ними выгоднее
+			.vrow
+				.vak-xs-12.vak-md-4.pocket-wrap.pocket-wrap-1
+					.pocket.pocket-1
+						.pocket-body.text-center
+							p.bold Пакет #1
+							p.pocket-sale.bold 2 билета - <br> <span class="color-main">7% скидка</span>
+							.pocket-button
+								+button("vbtn vbtn-effect-bounce-top vbtn-main-second-border", "#modalform") Забрать скидку
+				.vak-xs-12.vak-md-4.pocket-wrap.pocket-wrap-2
+					.pocket.pocket-2
+						.pocket-body.text-center
+							p.bold Пакет #2
+							p.pocket-sale.bold 3 билета - <br> <span class="color-main">10% скидка</span>
+							.pocket-button
+								+button("vbtn vbtn-effect-bounce-top vbtn-main-second", "#modalform") Забрать скидку
+				.vak-xs-12.vak-md-4.pocket-wrap.pocket-wrap-3
+					.pocket.pocket-3
+						.pocket-body.text-center
+							p.bold Пакет #3
+							p.pocket-sale.bold 2 билетов - <br> <span class="color-main">15% скидка</span>
+							.pocket-button
+								+button("vbtn vbtn-effect-bounce-top vbtn-main-second-border", "#modalform") Забрать скидку
+	section.vsection
+		.vcontainer
+			.vrow.what-partner
+				h3.vtitle.vtitle-letter Хотите <span class="color-main">стать партнёром</span> и <span class="color-main">продвигать свой бренд на тренинге</span> самого титулованного тренера по личностному росту и мотивации в СНГ?
+				.what-partner-btn
+					.what-partner-btn-inner.block-inline
+						+button("vbtn vbtn-effect-bounce-top vbtn-main-second", "#modalform") Да, хочу стать партнёром
+
 block dev
 	//- 	+button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalform") Button_text_big1
 	//- +button("vbtn vbtn-effect-shutter-vertical-out vbtn-main", "#modalvideo")(data-video="https://www.youtube.com/embed/Iutk7AboLZI" data-source="youtube" data-title="Уроки JavaScript Практика #3 Пишем свой CSS генератор") Button_text_big
+	//- <span class="black"></span>
+	//- <span class="color-main"></span>
 	.vmodal#modalform
 		.vmodal-dialog.vmodal-dialog-default.vmodal-dialog-center
 			button(type="button" class="vmodal-close" data-close="vmodal") &times;

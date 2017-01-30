@@ -59,6 +59,13 @@
     }
   }
 }
+.max-md-mb{
+  @include resp-max(md){
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}
 .ovh{
   overflow: hidden;
 }

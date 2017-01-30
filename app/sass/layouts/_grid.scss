@@ -87,6 +87,9 @@ End:  HIDDEN AND VISIBLE UTILITIES
       align-items: center;
     }
     &-just-cont{
+      &-center{
+        justify-content: center;
+      }
       &-between{
         justify-content: space-between;
       }

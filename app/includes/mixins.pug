@@ -15,14 +15,38 @@ mixin button(buttonClass, modalTarget)
 	button(class=buttonClass data-func="vmodal" data-target=modalTarget)&attributes(attributes): block
 mixin review(img, name, pos, link)
 	section.vsection.review-section.bg-main
-		.vcontainer
+		.vcontainer.review-type-text
 			.review-header
 				.vrow.review-header-inner
-					.vak-xs-12.vak-md-7
+					.vak-xs-12.vak-lg-9
 						.review-image: img(src=img)
 						p.review-name= name
 						p.review-pos.italic= pos
-					.vak-xs-12.vak-md-5.min-md-right
+					.vak-xs-12.vak-lg-3.min-lg-right
 						a(href="#").review-link= link
 			.review-body
+				block 
+mixin reviewVideo(img, name, pos, title, link)
+	section.vsection.ovh.review-video-wrap
+		.vcontainer
+			.review-header.review-header-video.review-type-video
+				.vrow.review-header-inner.review-header-video-inner
+					.vak-xs-12.vak-md-6
+						.review-image: img(src=img)
+						.review-inf
+							p.review-name= name
+							p.review-inf-pos= pos
+					.vak-xs-12.vak-md-6
+						p.review-title= title
+				.vrow
+					.vak-xs-12.vak-md-6.review-video-inner
+						iframe(frameborder="0" allowfullscreen src=link)
+					.vak-xs-12.vak-md-6.text-block.italic
+						block
+mixin trening(img)
+	.vak-xs-12.vak-sm-6.vak-md-4.trening-wrap
+		.trening
+			.trening-header
+				.trening-image: img(src=img)
+			.trening-body
 				block 
